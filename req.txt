@@ -1,0 +1,6 @@
+streamlit
+replicate
+numpy
+matplotlib
+networkx
+PIL
