@@ -6,9 +6,10 @@ import tempfile
 from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
+os.environ["REPLICATE_API_TOKEN"] = "r8_XWegXlXa2svAZDmhk8J5Fd4k8wI1q8w11AmxD"
 
-REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")
-api = replicate.Client(api_token=REPLICATE_API_TOKEN)
+#REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")
+#api = replicate.Client(api_token=REPLICATE_API_TOKEN)
 # Function to generate image
 def generate_image(input_image, input_text):
     # Create a temporary file for the input image
